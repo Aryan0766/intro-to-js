@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <title>Untitled</title>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js">
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js">
     </script>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/p5.sound@4.4.1/dist/p5.sound.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@4.4.1/dist/p5.sound.min.js">
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        let circleX = 200; // x position
-        let circleY = 200; // y position
-        let circleSize = 50; // Diameter of the circle
+      let circleX = 100; // x position
+      let circleY = 500; // y position
+      let circleSize = 50; // Diameter of the circle
 
-        function setup() {
-            createCanvas(800, 600); // canvas 800 x 600
-            background(100, 25, 69); // Lightgrey
-            //colorMode(HSL);
-        }
 
-        function draw() {
-            //ellipse(300, 200, 500, 700);
-            //ellipse(circleX, circleY, circleSize);
-            circle(200, 200, 50);
+      function setup () {
+        createCanvas(800, 600); // canvas 800 x 600
+        background("#F2B1B7"); // Lightgrey
+        let from = color(218, 165, 32);
+        let to = color(72, 61, 139);
+        // inncer color
+        let interA = lerpColor(from, to, 0.33);
+        let interB = lerpColor(from, to, 0.66);
+        fill(to);
+        ellipse(circleX, circleY, circleSize);
+      }
 
-            strokeWeight(2);
-            //stroke("purple");
-            noStroke();
+      function draw () {
+        //ellipse(300, 200, 500, 700);
+        //ellipse(circleX, circleY, circleSize);
+        let str = "lol";
+        circle(200, 200, 50);
 
-            // point(600,400);
-            line(340, 340, 600, 400);
+        strokeWeight(2);
+        stroke("yellow");
+        //noStroke();
 
-            fill("#155c21");
-            rect(340, 400, 50, 75);
+        // point(600,400);
+        line(340, 340, 600, 400);
 
-            fill(60, 239, 212);
-            triangle(230, 350, 330, 300, 435, 365);
+        fill("#155C21");
+        rect(340, 400, 50, 75);
+        //fill(60, 239, 212);
+        noFill();
+        triangle(230, 360, 330, 300, 435, 365);
 
-            fill(306, 77, 57);
-            arc(500, 50, 100, 100, radians(90), radians(360));
+        fill(306, 77, 57);
+        arc(500, 50, 100, 100, radians(90),
+          radians(360));
 
-            fill(50, 30, 25, 80);
-            beginShape(TRIANGLE_FAN);
-            vertex(50, 50);
-            vertex(240, 300);
-            vertex(625, 754);
-            vertex(60, 205);
-            endShape(CLOSE);
-        }
+        textSize(45);
+        fill("white");
+        stroke(4);
+        strokeWeight(5);
+        text("lol", 500, 450);
+        
+        fill(50, 30, 25, 80);
+        stroke(blue);
+        beginShape(TRIANGLE_FAN);
+        vertex(50, 50);
+        vertex(240, 300);
+        vertex(625, 754);
+        vertex(60, 205);
+        endShape(CLOSE);
+
+      }
     </script>
-</body>
+  </body>
 </html>
