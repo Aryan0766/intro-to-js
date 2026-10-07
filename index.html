@@ -1,1 +1,58 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Untitled</title>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js">
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/p5.sound@4.4.1/dist/p5.sound.min.js">
+    </script>
+</head>
+
+<body>
+    <script>
+        let circleX = 200; // x position
+        let circleY = 200; // y position
+        let circleSize = 50; // Diameter of the circle
+
+        function setup() {
+            createCanvas(800, 600); // canvas 800 x 600
+            background(100, 25, 69); // Lightgrey
+            //colorMode(HSL);
+        }
+
+        function draw() {
+            //ellipse(300, 200, 500, 700);
+            //ellipse(circleX, circleY, circleSize);
+            circle(200, 200, 50);
+
+            strokeWeight(2);
+            //stroke("purple");
+            noStroke();
+
+            // point(600,400);
+            line(340, 340, 600, 400);
+
+            fill("#155c21");
+            rect(340, 400, 50, 75);
+
+            fill(60, 239, 212);
+            triangle(230, 350, 330, 300, 435, 365);
+
+            fill(306, 77, 57);
+            arc(500, 50, 100, 100, radians(90), radians(360));
+
+            fill(50, 30, 25, 80);
+            beginShape(TRIANGLE_FAN);
+            vertex(50, 50);
+            vertex(240, 300);
+            vertex(625, 754);
+            vertex(60, 205);
+            endShape(CLOSE);
+        }
+    </script>
+</body>
+</html>
