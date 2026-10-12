@@ -1,0 +1,11 @@
+1. What is the difference between a Web API and a JavaScript library?
+A Web API is a way for your website to ask another service for information and features. You send a request and it sends data back. 
+Example: the Fetch API lets a webpage ask a server for data, like the weather or a list of images.
+A JavaScript library is a bundle of code someone else already wrote. You add it to your project so you donot have to build everything yourself. 
+Example: p5.js has made tools for drawing shapes, colors, and animation.
+The difference is  a Web API gets information or services from somewhere else. A library is code you add to your project to make writing the code easier.
+
+2. How does the reading distinguish between a library and a framework?
+A library is like a box of tools. You pick what you want and use it when you want. Example: p5.js. You decide when to draw a circle or change a color.
+A framework is like a pre made template. It set the structure and you fill in your part.
+The difference is who is in charge. With a library you decide when to use it. With a framework, the framework decides how your code fits.
