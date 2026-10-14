@@ -1,5 +1,4 @@
-// ---------- GLOBAL VARIABLES ----------
-let canvasWidth = 600;
+//GLOBAL VARIABLES 
 let canvasHeight = 500;
 
 let skyColor;
