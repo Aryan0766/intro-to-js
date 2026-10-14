@@ -23,7 +23,7 @@ let sunRotationSpeed = 0.02;
 
 function setup () {
   createCanvas(canvasWidth, canvasHeight);
-  // colors must be assigned inside setup() because color() needs p5 to be running
+  
   skyColor = color("lightblue");
   mountainColor = color(120, 120, 140);
   grassColor = color("green");
@@ -35,8 +35,7 @@ function setup () {
 
 function draw () {
   background(skyColor);
-  noStroke(); // resets the stroke left over from the sun's rays last frame
-
+  noStroke();
   // Mountain (triangle)
   fill(mountainColor);
   triangle(300, 120, 50, 300, 550, 300);
