@@ -61,7 +61,7 @@ function draw () {
   fill(doorColor);
   rect(houseX - 15, houseY + 40, 30, 60);
 
-  // Rotating sun (drawn last, since there's no pop() to undo the transform)
+  // Rotating sun
   translate(sunX, sunY);
   rotate(sunAngle);
 
